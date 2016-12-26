@@ -23,6 +23,7 @@ def prettyprint(solution):
         print(line(pos))
 
 from random import choice
-prettyprint(choice(list(queens(8))))
-
-# print(list(queens(4, (1,3,0))))
+try:
+    prettyprint(choice(list(queens(8))))
+except:
+    print("无解o(╯□╰)o")
